@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Potato",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2021/2/UH/HH/LB/44089979/potatoes-jpg-250x250.jpg",
+        "count": 1,
+        "price": 200
+    },
+    {
+        "title": "Tomato",
+        "image": "https://kiranacompare.com/wp-content/uploads/2020/11/71DYmqoq-VL._SL1024_.jpg",
+        "count": 1,
+        "price": 250
+    },
+    {
+        "title": "Meat",
+        "image": "https://www.foodmanufacture.co.uk/var/wrbm_gb_food_pharma/storage/images/_aliases/wrbm_large/publications/food-beverage-nutrition/foodmanufacture.co.uk/article/2021/02/01/meat-trends-market-prospers-in-face-of-pandemic/12148503-4-eng-GB/Meat-trends-market-prospers-in-face-of-pandemic.jpg",
+        "count": 1,
+        "price": 400
+    },
+    {
+        "title": "Milk",
+        "image": "https://www.kirbysproduce.com/wp-content/uploads/2020/04/whole-milk.jpg",
+        "count": 1,
+        "price": 300
+    },
+    {
+        "title": "Egg",
+        "image": "https://www.collinsdictionary.com/images/full/eggs_110803370_1000.jpg",
+        "count": 1,
+        "price": 150
+    },
+    {
+        "title": "Cabbage",
+        "image": "https://images.heb.com/is/image/HEBGrocery/000374791?fit=constrain,1&wid=800&hei=800&fmt=jpg&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0",
+        "count": 1,
+        "price": 80
+    },
+    {
+        "title": "Cheese",
+        "image": "https://interfood.imgix.net/assets/Cheese-3.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=525&q=60&s=ca697aeb51ce0758610df12880b48ef6",
+        "count": 1,
+        "price": 230
+    },
+    {
+        "title": "Sausage",
+        "image": "https://media.istockphoto.com/photos/sausages-picture-id1310971056?b=1&k=20&m=1310971056&s=170667a&w=0&h=JzQPBiik4ke02MDkhl94noQafiqwTXlgR_FEkY8hF88=",
+        "count": 1,
+        "price": 320
+    },
+    {
+        "title": "Brokkoli",
+        "image": "https://nebanan.com.ua/wp-content/uploads/2021/08/dizajn-bez-nazvaniya-78.jpg",
+        "count": 1,
+        "price": 100
+    }
+]

@@ -1,16 +1,18 @@
+import AppBar from "./AppBar/AppBar";
+import ShopPage from "./ShopPage/ShopPage";
+import CartPage from "./CartPage/CartPage";
+import { Route, Routes } from "react-router";
+import { GeneralWrap } from "./App.styled";
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <GeneralWrap>
+    <Routes>
+      <Route path="/" element={<AppBar/>}>
+        <Route index element={<ShopPage/>}/>
+        <Route path="/cart" element={<CartPage/>}/>
+      </Route>
+    </Routes>
+    </GeneralWrap>
   );
 };
