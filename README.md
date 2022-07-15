@@ -7,4 +7,8 @@
 Нижче залишаю посилання на додаток та репозиторій бекенд частини:
 - Додаток на Netlify: https://62d12971d082f0752845d88a--kronord-delivery-app.netlify.app/
 - Репозиторій бекенд частини: https://github.com/Kronord/Delivery-App-Back
+<<<<<<< HEAD
 - Репозиторій на Heroku (про всяк випадок): https://dashboard.heroku.com/apps/kronord-delivery-app
+=======
+- Репозиторій на Heroku (про всяк випадок): https://dashboard.heroku.com/apps/kronord-delivery-app
+>>>>>>> 37c56aa840c84834ee1510790a0971b9d5aef24f
