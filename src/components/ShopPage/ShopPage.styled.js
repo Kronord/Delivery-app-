@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Button from '@mui/material/Button';
 
 export const Wrapper = styled.div`
     display: flex;
@@ -35,4 +36,14 @@ export const Item = styled.li`
 export const Text =  styled.p`
     font-size: 24px;
     color: #1680E9;
+`
+
+export const Btn = styled(Button)`
+    &:focus {
+        background-color: #1680E9;
+        color: #fff;
+        &:hover {
+            background-color: #1680E9;
+        };
+    }
 `

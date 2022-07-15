@@ -2,8 +2,9 @@ import React from 'react';
 import BasicCard from './ProductCard/BasicProductCard';
 import { useGetProductsQuery } from 'components/Redux/AllProducts/productsApi';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Button from '@mui/material/Button';
-import { Wrapper, GalleryBox, ShopsBox, ShopsList, Item, Text } from './ShopPage.styled';
+import { Wrapper, GalleryBox, ShopsBox, ShopsList, Item, Text, Btn } from './ShopPage.styled';
+import { useSelector } from 'react-redux';
+import { useState } from 'react';
 
 const theme = createTheme({
   palette: {
@@ -14,19 +15,21 @@ const theme = createTheme({
 });
 
 const ShopPage = () => {
-  const {data, error, isFetching} = useGetProductsQuery('');
+  const [endpoint, setEndpoint] = useState('products');
+  const  products = useSelector(state => state.orderedProducts.products);
+  const {data} = useGetProductsQuery(endpoint);
+  
   return (
     <Wrapper>
       <ShopsBox>
         <Text>Shops:</Text>
         <ShopsList>
           <ThemeProvider theme={theme}>
-          <Item><Button variant='outlined' size='large'>Prod-Market</Button></Item>
-          <Item><Button variant='outlined' size='large'>Smart-shop</Button></Item>
-          <Item><Button variant='outlined' size='large'>Comfy</Button></Item>
-          <Item><Button variant='outlined' size='large'>Burger-Shot</Button></Item>
-          <Item><Button variant='outlined' size='large'>Pizza-House</Button></Item>
-          <Item><Button variant='outlined' size='large'>Sushi-master</Button></Item>
+          <Item><Btn variant='outlined' size='large' disabled={products.length === 0 ? false : true} onClick={() => setEndpoint('products')}>Prod-Market</Btn></Item>
+          <Item><Btn variant='outlined' size='large' disabled={products.length === 0 ? false : true} onClick={() => setEndpoint('mcDonalds')}>McDonalds</Btn></Item>
+          <Item><Btn variant='outlined' size='large' disabled={products.length === 0 ? false : true} onClick={() => setEndpoint('kfc')}>KFC</Btn></Item>
+          <Item><Btn variant='outlined' size='large' disabled={products.length === 0 ? false : true} onClick={() => setEndpoint('pizza')}>Pizza-House</Btn></Item>
+          <Item><Btn variant='outlined' size='large' disabled={products.length === 0 ? false : true} onClick={() => setEndpoint('sushiya')}>Sushiya</Btn></Item>
           </ThemeProvider>
         </ShopsList>
       </ShopsBox>

@@ -47,15 +47,16 @@ const CartPage = () => {
     },
     validationSchema: validationSchema,
     onSubmit: (values, actions) => {
-      console.log({...values, order: {products, total}});
+      console.log({...values, order: [{products, total}]});
       actions.resetForm();
       dispatch(emptyCart());
-      addUser({...values, order: {products, total}});
+      addUser({...values, order: [{products, total}]});
     },
   });
   return (
     <>
       <CartPageWrap>
+        
         <Wrapper>
           <Title>Enter your details</Title>
           <form onSubmit={formik.handleSubmit}>

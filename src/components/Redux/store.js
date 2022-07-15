@@ -20,8 +20,6 @@ const persistConfig = {
 
 const persistedReducer = persistReducer(persistConfig, productReducer);
 
-console.log(productReducer);
-
 export const store = configureStore({
   reducer: {
     [productsApi.reducerPath]: productsApi.reducer,

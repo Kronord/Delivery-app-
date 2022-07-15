@@ -3,13 +3,13 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const productsApi = createApi({
   reducerPath: 'products',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://localhost:3000/api',
+    baseUrl: 'https://kronord-delivery-app.herokuapp.com/api',
   }),
   endpoints: builder => ({
     getProducts: builder.query({
-      query: () => '/products',
+      query: endpoint => `/${endpoint}`,
       providesTags: ['Product'],
-    }),
+    }),    
     }),
 });
 
