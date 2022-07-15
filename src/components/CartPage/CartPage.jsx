@@ -32,7 +32,7 @@ const CartPage = () => {
   const [total, setTotal] = useState(0);
   const dispatch = useDispatch();
   const products = useSelector(state => state.orderedProducts.products);
-  const [addUser, {isLoading: spinner}] = useAddUserMutation();
+  const [addUser] = useAddUserMutation();
   useEffect(() => {
     setTotal(products.reduce((prev, {count, price}) => {
       return prev + count * price;
