@@ -8,5 +8,6 @@
 - Додаток на Netlify: https://62d12971d082f0752845d88a--kronord-delivery-app.netlify.app/
 - Репозиторій бекенд частини: https://github.com/Kronord/Delivery-App-Back
 - Репозиторій на Heroku (про всяк випадок): https://dashboard.heroku.com/apps/kronord-delivery-app
+
 P.S. Список продуктів при першій загрузці сторінки може підгружатись декілька секунд, потрібно буде трішки почекати,
 скоріш за все в цей момент вмикається сервер на хероку.
